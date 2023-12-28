@@ -1,0 +1,22 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Kanit&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Poor+Story&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  /* Set your desired gradient values */
+  background: linear-gradient(to bottom, #4e0202, #7498df);
+  /* background: linear-gradient(to bottom, #091c01, #7be594); */
+  margin: 0;
+  padding: 0;
+  font-family: "Poor Story", sans-serif;
+  color: wheat;
+  min-height: 100vh; /* Set height to 100% of the viewport height */
+}
+
+p {
+  font-size: 1.2rem;
+}
