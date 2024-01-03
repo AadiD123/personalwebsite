@@ -38,7 +38,7 @@ const work = [
     name: "IT Specialist",
     company: "AdaQuest",
     description:
-      "I cultivated a foundational understanding of programming tools, such as Github and Terminal, that will help students throughout their careers. I also led weekly supplementary sessions for 93 students to resolve any misconceptions they might have.",
+      "I worked directly under the CEO's mentorship to develop company wide compliance policies for devices with Microsoft Endpoint Manager. Additionally, I presented weekly incident reports to company executives.",
     tools: [
       "Microsoft Azure",
       "Microsoft Intune",
