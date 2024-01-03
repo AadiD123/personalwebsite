@@ -1,0 +1,43 @@
+.spotlight {
+  position: fixed;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.4) 0%,
+    rgba(255, 255, 255, 0) 70%
+  );
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: all 0.2s ease;
+}
+
+.timeline {
+  position: relative;
+  padding-left: 30px;
+  margin-top: 20px;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.project-card {
+  position: relative;
+  border-radius: 4px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-date {
+  display: block;
+  margin-bottom: 10px;
+  color: #ddd;
+  font-size: 0.9em;
+}

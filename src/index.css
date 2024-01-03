@@ -8,15 +8,12 @@
 html,
 body {
   /* Set your desired gradient values */
-  background: linear-gradient(to bottom, #4e0202, #7498df);
-  /* background: linear-gradient(to bottom, #091c01, #7be594); */
+  background: linear-gradient(to bottom, #4e0202, #68748e);
+  /* background: linear-gradient(to top, #4e2323, #ffffff); */
   margin: 0;
   padding: 0;
   font-family: "Poor Story", sans-serif;
-  color: wheat;
+  color: lightgray;
+  /* color: black; */
   min-height: 100vh; /* Set height to 100% of the viewport height */
-}
-
-p {
-  font-size: 1.2rem;
 }

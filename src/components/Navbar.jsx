@@ -5,9 +5,7 @@ export default function Navbar() {
     <>
       <div className="max-w-md mx-auto flex flex-col sm:flex-row justify-evenly rounded-3xl md:rounded-full py-2 px-5 bg-gray-300 filter drop-shadow-lg text-black">
         <NavLink label="About" />
-        <NavLink label="Projects" />
         <NavLink label="Work" />
-        <NavLink label="Skills" />
       </div>
     </>
   );
