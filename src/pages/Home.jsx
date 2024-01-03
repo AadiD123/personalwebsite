@@ -41,29 +41,6 @@ export default function Home() {
           </button>
         </div>
       </div>
-
-      <div className="fixed inset-x-0 top-0 sm:hidden bg-black">
-        <div className="flex justify-center space-x-4 p-4">
-          <button
-            onClick={() => scrollToSection("about")}
-            className="text-lg hover:scale-150 transform transition duration-300"
-          >
-            About
-          </button>
-          <button
-            onClick={() => scrollToSection("work")}
-            className="text-lg hover:scale-150 transform transition duration-300"
-          >
-            Work
-          </button>
-          <button
-            onClick={() => scrollToSection("projects")}
-            className="text-lg hover:scale-150 transform transition duration-300"
-          >
-            Projects
-          </button>
-        </div>
-      </div>
       <div id="about">
         <About />
       </div>

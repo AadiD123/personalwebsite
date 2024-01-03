@@ -1,5 +1,11 @@
 import React from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import "./Projects.css";
+
+import { CustomNextArrow } from "./CarouselArrows";
+import { CustomPrevArrow } from "./CarouselArrows";
 
 import {
   Timeline,
@@ -59,71 +65,57 @@ const work = [
 ];
 
 const Work = () => {
+  const settings = {
+    dots: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    nextArrow: <CustomNextArrow />,
+    prevArrow: <CustomPrevArrow />,
+  };
+
   return (
-    <div className="min-h-screen flex justify-center items-center">
+    <div className="min-h-screen flex justify-center items-start">
       <div className="w-full max-w-4xl p-8">
-        <p className="text-5xl sm:text-7xl pb-10">Work</p>
-        <div className="hidden sm:block">
-          <Timeline position="alternate">
-            {work.map((project, index) => (
-              <TimelineItem key={index}>
-                <TimelineOppositeContent>
-                  {project.date}
-                </TimelineOppositeContent>
-                <TimelineSeparator>
-                  <TimelineDot />
-                  <TimelineConnector />
-                </TimelineSeparator>
-                <TimelineContent>
-                  <div className="flex flex-col mb-8" key={index}>
-                    <div className="bg-gray-700 bg-opacity-40 p-5 shadow-lg transform transition duration-500 hover:scale-105 relative overflow-hidden rounded-lg">
-                      <a
-                        href={project.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="block"
-                      >
-                        <h3 className="text-2xl font-bold">{project.name}</h3>
-                        <h4 className="text-lg italic">{project.company}</h4>
-                        <p className="text-lg">{project.description}</p>
-                        <div className="mt-2">
-                          {project.tools.map((tool, toolIndex) => (
-                            <span
-                              key={toolIndex}
-                              className="inline-block bg-gray-900 rounded-full px-3 py-1 text-sm font-semibold text-gray-200 mr-2 mt-2"
-                            >
-                              {tool}
-                            </span>
-                          ))}
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                </TimelineContent>
-              </TimelineItem>
+        <p className="text-5xl sm:text-9xl pb-10">Work</p>
+        <div className="container mx-auto mt-10 mb-10 p-4 sm:p-10 hidden sm:block">
+          <Slider {...settings}>
+            {work.map((job, index) => (
+              <div
+                key={index}
+                className="rounded bg-gray-500 bg-opacity-20 shadow-lg h-[470px] p-[100px] flex flex-col justify-evenly"
+              >
+                <h3 className="text-4xl font-bold">{job.name}</h3>
+                <h4 className="text-2xl italic">{job.company}</h4>
+                <p className="mt-2">{job.date}</p>
+                <p className="mt-4 text-xl">{job.description}</p>
+                <div className="mt-2">
+                  {job.tools.map((tool, toolIndex) => (
+                    <span
+                      key={toolIndex}
+                      className="inline-block bg-gray-900 rounded-full px-3 py-1 text-sm font-semibold text-gray-200 mr-2 mt-2"
+                    >
+                      {tool}
+                    </span>
+                  ))}
+                </div>
+              </div>
             ))}
-          </Timeline>
+          </Slider>
         </div>
 
+        {/*Mobile View*/}
         <div className="sm:hidden">
-          <p className="text-5xl sm:text-7xl pb-10">Work</p>
-          {work.map((project, index) => (
+          {work.map((job, index) => (
             <div className="flex flex-col mb-8" key={index}>
-              <span className="block text-sm text-center my-2">
-                {project.date}
-              </span>
+              <span className="block text-sm text-center my-2">{job.date}</span>
               <div className="bg-gray-700 bg-opacity-40 p-5 shadow-lg transform transition duration-500 hover:scale-105 relative overflow-hidden rounded-lg">
-                <a
-                  href={project.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block"
-                >
-                  <h3 className="text-2xl font-bold">{project.name}</h3>
-                  <h4 className="text-1xl font-bold">{project.company}</h4>
-                  <p className="text-lg">{project.description}</p>
+                <div className="block text-left">
+                  <h3 className="text-2xl font-bold">{job.name}</h3>
+                  <h4 className="text-1xl font-bold">{job.company}</h4>
+                  <p>{job.description}</p>
                   <div className="mt-2">
-                    {project.tools.map((tool, toolIndex) => (
+                    {job.tools.map((tool, toolIndex) => (
                       <span
                         key={toolIndex}
                         className="inline-block bg-gray-900 rounded-full px-3 py-1 text-sm font-semibold text-gray-200 mr-2 mt-2"
@@ -132,7 +124,7 @@ const Work = () => {
                       </span>
                     ))}
                   </div>
-                </a>
+                </div>
               </div>
             </div>
           ))}

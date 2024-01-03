@@ -5,11 +5,11 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 
 export default function About() {
   return (
-    <div className="relative flex flex-col justify-evenly">
+    <div className="min-h-screen flex flex-col justify-center items-center p-10">
       <p className="text-8xl sm:text-9xl py-28 transition-all duration-1000">
         Hi. I'm Aaditya.
       </p>
-      <div className="flex flex-col md:flex-row justify-center items-center max-w-6xl md:space-x-32 space-y-12 relative transition-all duration-1000">
+      <div className="flex flex-col lg:flex-row justify-center items-center max-w-6xl md:space-x-32 space-y-12 relative transition-all duration-1000">
         <div>
           <img
             src={image}
@@ -30,7 +30,7 @@ export default function About() {
 
         <a
           href="https://drive.google.com/file/d/13FZ2AhpcEYOiuro7kG0m8QuWBtMXQncl/view?usp=sharing"
-          className="absolute -top-12 -left-28 h-16 w-16 flex items-center justify-center rounded-full bg-red-900 text-white text-sm transition duration-300 hover:bg-red-400"
+          className="invisible lg:visible absolute -top-12 -left-28 h-16 w-16 flex items-center justify-center rounded-full bg-red-900 text-white text-sm transition duration-300 hover:bg-red-400"
         >
           Resume
         </a>
@@ -46,7 +46,7 @@ export default function About() {
           </p>
         </div>
       </div>
-      <div className="rounded-full m-28">
+      <div className="flex rounded-full m-28">
         <a href="https://www.linkedin.com/in/aadityadoiphode/">
           <LinkedInIcon style={{ fontSize: 48 }} />
         </a>
