@@ -22,7 +22,7 @@ const work = [
     name: "Full Stack Software Engineer",
     company: "Purdue University Center For Career Opportunities",
     description:
-      "I work part-time throughout the school year as a full stack software engineer for Purdue University's Center For Career Opportunities. I work on a team of 3 to develop and maintain the university's website.",
+      "I work part-time throughout the school year as a full stack software engineer for Purdue University's Center For Career Opportunities.",
     tools: ["C#", ".NET", "SQL", "HTML", "CSS", "JavaScript"],
     date: "Dec 2023 - Present",
   },

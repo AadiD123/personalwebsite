@@ -15,16 +15,16 @@ const projects = [
     name: "Hack The Future",
     description:
       "I'm a team lead for Hack The Future, a student organization at Purdue University that develops software for local nonprofits. My team works with Hanna Community Center to develop their enrollment system.",
-    tools: ["React", "MongoDB"],
-    link: "http://linktoprojectone.com",
+    tools: ["React", "MongoDB", "Figma"],
+    link: "https://htfpurdue.org",
     date: "Aug 2023 - Present",
   },
   {
     name: "Boiler Bites",
     description:
       "A mobile application for Purdue boilermakers to find food around campus using crowdsourced ratings.",
-    tools: ["React", "Node.js", "Express", "AWS RDS", "Ionic"],
-    link: "http://linktoprojectone.com",
+    tools: ["React", "Node.js", "Express", "AWS RDS", "Ionic", "Figma"],
+    link: "https://github.com/AadiD123/boilerbites-native",
     date: "Aug 2023 - Present",
   },
   {
@@ -32,7 +32,7 @@ const projects = [
     description:
       "A fun project I made to learn about Chrome extensions. It plays a continuous loops of Subway Surfers on the side of your browser.",
     tools: ["JavaScript", "HTML"],
-    link: "http://linktoprojectone.com",
+    link: "https://chromewebstore.google.com/detail/maboghjgeadhelcbdpjegiijbfinaboc",
     date: "July 2023",
   },
   {

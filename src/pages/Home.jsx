@@ -19,6 +19,26 @@ export default function Home() {
 
   return (
     <div className={`${fadeIn ? "fadeIn" : ""}`}>
+      <a
+        href="mailto:aadityad27@gmail.com"
+        className="pt-10 pr-10 text-right hidden sm:block relative md:absolute md:top-10 md:right-10 md:p-0 text-xl"
+      >
+        {"Looking for 2024 internships".split("").map(
+          (char, index) =>
+            char === " " ? (
+              <span key={index}>&nbsp;</span> // Render space normally
+            ) : (
+              <span
+                key={index}
+                className={`jumping-letter`}
+                style={{ "--i": index }}
+              >
+                {char}
+              </span>
+            ) // Animate letters
+        )}
+      </a>
+
       <div className="fixed left-10 top-1/2 transform -translate-y-1/2 hidden xl:flex">
         <div className="flex flex-col space-y-4">
           <button

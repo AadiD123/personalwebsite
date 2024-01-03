@@ -1,5 +1,5 @@
 import image from "../assets/face.jpg";
-import spotify from "../assets/spotify.png";
+import spotify from "../assets/Spotify.png";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 

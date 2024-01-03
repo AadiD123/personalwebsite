@@ -12,3 +12,22 @@
 .fadeIn {
   animation: fadeIn 1s ease backwards;
 }
+
+@keyframes jump {
+  0%,
+  95%,
+  100% {
+    transform: translateY(0);
+  }
+  95% {
+    transform: translateY(
+      -10px
+    ); /* Adjust the value to control the jump height */
+  }
+}
+
+.jumping-letter {
+  display: inline-block; /* Allows transformation */
+  animation: jump 5s ease infinite; /* Runs every 20 seconds */
+  animation-delay: calc(0.1s * var(--i)); /* Slight delay for each letter */
+}
