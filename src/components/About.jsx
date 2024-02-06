@@ -20,7 +20,7 @@ export default function About() {
           <a href="https://open.spotify.com/track/0ofHAoxe9vBkTCp2UQIavz">
             <div className="relative flex mx-auto my-auto h-16 w-80 bg-gray-800">
               <a
-                href="https://drive.google.com/file/d/13FZ2AhpcEYOiuro7kG0m8QuWBtMXQncl/view?usp=sharing"
+                href="https://drive.google.com/file/d/140Sbn1gEVCng9yNcF6xC0pMhlqqmt278/view?usp=drive_link"
                 className="absolute -top-72 -left-3 h-16 w-16 flex flex-col items-center justify-center rounded-full bg-red-900 text-white text-sm transition duration-300 hover:bg-red-400"
               >
                 Resume
