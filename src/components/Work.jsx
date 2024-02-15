@@ -19,10 +19,10 @@ import {
 
 const work = [
   {
-    name: "Full Stack Software Engineer",
+    name: "Full Stack Software Engineer Intern",
     company: "Purdue University Center For Career Opportunities",
     description:
-      "I work part-time throughout the school year as a full stack software engineer for Purdue University's Center For Career Opportunities.",
+      "I work part-time as a full stack software engineer for Purdue University's Center For Career Opportunities.",
     tools: ["C#", ".NET", "SQL", "HTML", "CSS", "JavaScript"],
     date: "Dec 2023 - Present",
   },
@@ -30,12 +30,12 @@ const work = [
     name: "Undergraduate Teaching Assistant for CS 193 Tools",
     company: "Purdue University",
     description:
-      "I cultivated a foundational understanding of programming tools, such as Github and Terminal, that will help students throughout their careers. I also led weekly supplementary sessions for 93 students to resolve any misconceptions they might have.",
+      "I cultivated a foundational understanding of programming tools that will help students throughout their careers. I also led weekly supplementary sessions for ~93 students to resolve any misconceptions they might have.",
     tools: ["Teaching"],
     date: "Aug 2023 - Dec 2023",
   },
   {
-    name: "IT Specialist",
+    name: "Information Technology Intern",
     company: "AdaQuest",
     description:
       "I worked directly under the CEO's mentorship to develop company wide compliance policies for devices with Microsoft Endpoint Manager. Additionally, I presented weekly incident reports to company executives.",
@@ -47,7 +47,7 @@ const work = [
     date: "Sep 2021 - Jun 2022",
   },
   {
-    name: "Lead Software Engineer",
+    name: "Software Engineer Intern | Project Lead",
     company: "Reach For The Stars",
     description:
       "I was in charge of the nonprofit's entire website revamp project. I interviewed, hired, and managed 4 volunteers and launched live website sucessfully",
@@ -55,10 +55,10 @@ const work = [
     date: "Jan 2021 - Jun 2022",
   },
   {
-    name: "Software Engineer",
+    name: "Software Engineer Intern",
     company: "Harvard In Tech",
     description:
-      "I developed and maintained production, test, and beta website and web apps with 100+ daily views.",
+      "I developed and maintained production, test, and beta website and web apps.",
     tools: ["HTML", "CSS", "JavaScript"],
     date: "May 2021 - May 2022",
   },

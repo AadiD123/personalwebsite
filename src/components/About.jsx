@@ -39,9 +39,9 @@ export default function About() {
             I’m an aspiring software engineer from Seattle, WA
           </p>
           <p className="text-2xl">
-            Currently, I’m a Computer Science student at Purdue University,
-            concentrating in the Machine Learning track. I had a passion for
-            coding since middle school and constantly seek to learn new
+            Currently, I am a Computer Science student at Purdue University,
+            concentrating on the Machine Learning track. I have had a passion
+            for coding since middle school and constantly seek to learn new
             technologies and frameworks that will help me build better software.
             <br />
             <br />

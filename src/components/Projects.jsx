@@ -12,6 +12,14 @@ import {
 
 const projects = [
   {
+    name: "Prosody",
+    description:
+      "Speech analyzer that provides AI-driven quantitative feedback to help users improve their speaking skills. 1st Place at Purdue's Biggest Hackathon, BoilerMake XI.",
+    tools: ["React.js", "Python", "OpenAI Whisper", "Tailwind CSS"],
+    link: "https://github.com/AadiD123/presentation-analyser",
+    date: "January 2024",
+  },
+  {
     name: "Hack The Future",
     description:
       "I'm a team lead for Hack The Future, a student organization at Purdue University that develops software for local nonprofits. My team works with Hanna Community Center to develop their enrollment system.",
